@@ -1,5 +1,3 @@
-
-<div id="content">
     <div class="wrapper clearfix">
         <form id="form-update-{$id}" data-id="{$id}" class="form-update form-horizontal">
         	<div class="row">
@@ -76,4 +74,3 @@
             </div>
         </div>
     </div>
-</div>
