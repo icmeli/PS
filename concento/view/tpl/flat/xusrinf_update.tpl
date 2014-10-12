@@ -1,4 +1,3 @@
-    <div class="wrapper clearfix">
         <form id="form-update-{$id}" data-id="{$id}" class="form-update form-horizontal">
         	<div class="row">
         		{input type="hidden" name="id" value="{$id}"}
@@ -73,4 +72,3 @@
             {/foreach}
             </div>
         </div>
-    </div>
