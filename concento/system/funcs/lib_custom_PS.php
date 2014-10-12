@@ -10,8 +10,8 @@ function setCourseStudents ( $students, $course_id ) {
 	if( is_array($students) && isset($students) && !is_null($course_id) ) {
 	    // mevcut kişileri pasif yaparak, hepsine bir ders hakkı ekliyoruz
 	    $sql = "SELECT TOCODE FROM RELATIONS WHERE FROMMODULE = 'courses' AND FROMCODE = '".$course_id."' AND OP = '1'";
-	    $students = $db->getAll($sql,null,null,null,MDB2_FETCHMODE_ASSOC);
-	    foreach ($students as $val){
+	    $stus = $db->getAll($sql,null,null,null,MDB2_FETCHMODE_ASSOC);
+	    foreach ($stus as $val){
 	        $query = "UPDATE CMDB SET LEVEL = LEVEL + 1 WHERE CONTACTCODE = '".$val["TOCODE"]."'";
 	        $db->query( $query );
 	    }
