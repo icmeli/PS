@@ -13,9 +13,10 @@
 	        {input type="text" label="Kota" name="courses_quota" value="{$courses_quota}" error="{$courses_quotaerror}" }
 	    </div>
 		<div class="col-lg-4">
-	        {input type="text" label="Eğitmen Kodu" name="courses_instructor" value="{$courses_instructor}" error="{$courses_instructorerror}"}
-	        {input label="Eğitmen Adı" type="text" id="courses_instructorName" search="module=xusrinf&context=form-insert&multi_select=0&xusrinf_full=[#courses_instructorName]&xusrinf_type=instructor&unique=coursesxusrinf"}
-	        {input type="text" label="Parent Code" name="courses_parentcode" value="routine" error="{$courses_parentcodeerror}" }
+	        {select label="Eğitmen" name="courses_instructor" id="courses_instructor" options=$courses_instructoro selected=$courses_instructor}
+	        {**input type="text" label="Eğitmen Kodu" name="courses_instructor" value="{$courses_instructor}" error="{$courses_instructorerror}"**}
+	        {**input label="Eğitmen Adı" type="text" id="courses_instructorName" search="module=xusrinf&context=form-insert&multi_select=0&xusrinf_full=[#courses_instructorName]&xusrinf_type=instructor&unique=coursesxusrinf"**}
+	        {input type="hidden" label="Parent Code" name="courses_parentcode" value="routine" error="{$courses_parentcodeerror}" }
 	    </div>
 	</div>
 	<footer class="row">
