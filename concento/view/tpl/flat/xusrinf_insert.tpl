@@ -9,8 +9,6 @@
 	        {input type="text" label="Telefon-Cep" name="xusrinf_cPhone" value="{$xusrinf_cPhone}" error="{$xusrinf_cPhoneerror}" icon="fa-phone"}
 	        {input type="text" label="Telefon-Ev" name="xusrinf_hPhone" value="{$xusrinf_hPhone}" error="{$xusrinf_hPhoneerror}" icon="fa-phone"}
 	        {input type="text" label="Telefon-İş" name="xusrinf_wPhone" value="{$xusrinf_wPhone}" error="{$xusrinf_wPhoneerror}" icon="fa-phone"}
-
-
 		</div>
 		<div class="col-lg-4">
 	        {select label="##Tip##" name="xusrinf_type" id="xusrinf_type" options=$xusrinf_typeo selected=$xusrinf_type}

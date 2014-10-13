@@ -15,7 +15,7 @@
 		    {input label="Kişi Adı" type="text" id="cfg_contactName" value="{$cfg_contactName}" search="module=xusrinf&context=form-insert&multi_select=0&xusrinf_full=[#cfg_contactName]&xusrinf_type=&unique=cfgxusrinf"}
 
 			{input label="##Ders Sayısı##" name="cfg_level" id="cfg_level" value="{$cfg_level}" }
-			{input label="##İndirim oranı (%)##" name="cfg_yetkikodu" id="cfg_yetkikodu" value="0" class="numbersOnly" }
+			{input label="##(%)##" name="cfg_yetkikodu" id="cfg_yetkikodu" value="0" class="numbersOnly" }
 
 			{input label="##Kart Başlangıç##" name="cfg_garantistart" id="cfg_garantistart" value="{$cfg_garantistart}" type="date"}
 			{input label="##Kart Bitiş##" name="cfg_garantiend" id="cfg_garantiend" value="{$cfg_garantiend}" type="date" }
